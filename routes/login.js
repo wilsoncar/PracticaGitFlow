@@ -6,6 +6,7 @@ function loginApi(app) {
     app.use("/api/login", router);
 
     const loginService = new LoginService();
+    console.log("Funcionalidad Websocket añadida");
     
 
     router.post("/", async function (req, res, next) {
